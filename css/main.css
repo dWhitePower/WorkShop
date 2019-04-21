@@ -1,48 +1,184 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   font-family: "Raleway", sans-serif;
-  line-height: 1.4; }
+  line-height: 1.4;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
 
 .container {
   max-width: 1366px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .py-1 {
-  margin-bottom: 4.5rem; }
+  margin-bottom: 4.5rem;
+}
 
-.nav {
-  color: #1b1a1d;
-  font-size: 1.6rem;
-  position: sticky;
-  z-index: 10; }
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .nav ul {
-    display: flex; }
-    .nav ul li:not(:last-child) {
-      margin-right: 2.5rem; }
-    .nav ul a {
-      display: inline-block;
-      color: inherit;
-      padding: 3rem 1rem 2rem 1rem;
-      transition: all 0.5s ease; }
-      .nav ul a:hover {
-        background: #c34646;
-        color: #fff; }
+.arrow-box {
+  text-align: center;
+}
+
+.arrow {
+  padding: 1rem;
+  text-align: center;
+}
+
+.arrow-icon {
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  padding: 15px;
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: relative;
+}
+
+.arrow-icon:before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cd4846), color-stop(26.56%, #d94f4c), color-stop(50%, #e07276), to(#ba69c4));
+  background: linear-gradient(180deg, #cd4846 0%, #d94f4c 26.56%, #e07276 50%, #ba69c4 100%);
+}
+
+.arrow-icon:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  right: -14px;
+  bottom: 14px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cd4846), color-stop(26.56%, #d94f4c), color-stop(50%, #e07276), to(#ba69c4));
+  background: linear-gradient(180deg, #cd4846 0%, #d94f4c 26.56%, #e07276 50%, #ba69c4 100%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
 
 .header {
-  height: 95vh; }
+  height: 100vh;
+}
+
+.header .nav {
+  color: #1b1a1d;
+  font-size: 1.6rem;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+}
+
+.header .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav ul li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.header .nav ul a {
+  display: inline-block;
+  color: inherit;
+  padding: 3rem 1rem 2rem 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header .nav ul a:hover {
+  background: #c34646;
+  color: #fff;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 9rem;
+}
+
+.header-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header-text h1 {
+  font-size: 9.4rem;
+  font-family: "Abril Fatface", cursive;
+  background: linear-gradient(150deg, #cd4846 0%, #d94f4c 26.56%, #e07276 50%, #ba69c4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-text h1 span {
+  font-size: 7rem;
+}
+
+.header-text p {
+  font-size: 16px;
+  width: 50rem;
+}
+
+.header-image {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  width: 62rem;
+  height: 59rem;
+  background: url("../dist/img/pic2.jpg") no-repeat 1% center/cover;
+  position: relative;
+}
+
+.header-image:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 95%;
+  height: 95%;
+  top: -30px;
+  left: 65px;
+  bottom: 0;
+  right: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cd4846), color-stop(26.56%, #d94f4c), color-stop(50%, #e07276), to(#ba69c4));
+  background: linear-gradient(180deg, #cd4846 0%, #d94f4c 26.56%, #e07276 50%, #ba69c4 100%);
+}
+/*# sourceMappingURL=main.css.map */
