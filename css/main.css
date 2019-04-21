@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4; }
+
+html {
+  font-size: 62.5%; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto; }
+
+.py-1 {
+  margin-bottom: 4.5rem; }
+
+.nav {
+  color: #1b1a1d;
+  font-size: 1.6rem;
+  position: sticky;
+  z-index: 10; }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .nav ul {
+    display: flex; }
+    .nav ul li:not(:last-child) {
+      margin-right: 2.5rem; }
+    .nav ul a {
+      display: inline-block;
+      color: inherit;
+      padding: 3rem 1rem 2rem 1rem;
+      transition: all 0.5s ease; }
+      .nav ul a:hover {
+        background: #c34646;
+        color: #fff; }
+
+.header {
+  height: 95vh; }
