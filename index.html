@@ -8,11 +8,13 @@
       href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../scss/main.css" />
-    <title></title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Arabian | Workshop</title>
   </head>
   <body>
-    <!-- <nav class="nav">
+    <div class="page-bg">
+      <!-- <nav class="nav">
       <div class="container nav-container">
         <div class="nav-logo">
           RUSSIAN ARABIAN WORKSHOP
@@ -28,37 +30,270 @@
       </div>
     </nav> -->
 
-    <header id="header" class="header">
-      <nav class="nav">
-        <div class="container nav-container">
-          <div class="nav-logo">
-            RUSSIAN ARABIAN WORKSHOP
+      <header id="header" class="header">
+        <nav class="nav">
+          <div class="container nav-container">
+            <a href="#header" class="nav-logo">
+              <img src="../dist/img/logo.png" alt="Logo" />
+            </a>
+            <div class="nav-menu">
+              <ul>
+                <li><a href="#event">О МЕРОПРИЯТИИ</a></li>
+                <li><a href="#schedule">РАСПИСАНИЕ</a></li>
+                <li><a href="#operator">КОНТАКТЫ</a></li>
+                <li><a href="#" class="nav-reg">РЕГИСТРАЦИЯ</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="nav-menu">
-            <ul>
-              <li><a href="#event">О МЕРОПРИЯТИИ</a></li>
-              <li><a href="#schedule">РАСПИСАНИЕ</a></li>
-              <li><a href="#reg">РЕГИСТРАЦИЯ</a></li>
-              <li><a href="#contacts">КОНТАКТЫ</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
 
-      <div class="container header-container">
-        <div class="header-text">
-          <h1 class="py-1">RUSSIAN ARABIAN <span>WORKSHOP</span></h1>
-          <p class="py-1">
-            Это площадка для создания взаимовыгодного партнерства и прямая
-            возможность для иностранных компаний выйти на российский рынок.
-          </p>
-          <div class="arrow-box">
-            <a href="#event" class="arrow"><i class="arrow-icon"></i></a>
+        <div class="container header-container">
+          <div class="header-text">
+            <h1 class="py-1">
+              <div class="anim-span-1">
+                <span class="title-anim-1"> RUSSIAN </span>
+              </div>
+              <div class="anim-span-2">
+                <span class="title-anim-2"> ARABIAN </span>
+              </div>
+              <div class="anim-span-3">
+                <span class="small-title title-anim-3">WORKSHOP</span>
+              </div>
+            </h1>
+            <p class="py-1 paragraph anim-paragraph">
+              Это площадка для создания взаимовыгодного партнерства и прямая
+              возможность для иностранных компаний выйти на российский рынок.
+            </p>
+            <div class="arrow-box">
+              <a href="#event" class="arrow"><i class="arrow-icon"></i></a>
+            </div>
+          </div>
+          <div class="header-images">
+            <div class="header-image"></div>
+            <div class="header-gradient"></div>
           </div>
         </div>
-        <div class="header-image"></div>
+      </header>
+
+      <section id="event" class="event">
+        <div class="event-background"></div>
+        <div class="event-gradient"></div>
+        <div class="container event-container">
+          <div class="event-about">
+            <h1 class="py-1 about-title">О мероприятии</h1>
+            <p class="py-0 paragraph-event anim-paragraph-event">
+              Уникальное мероприятие, на котором встречаются бизнес - сообщество
+              пищевой индустрии GCC и Ближнего Востока с российскими
+              представителями индустрии питания: топ-менеджмент гипермаркетов,
+              сотрудники HORECA, представители пищевых комплексов, трейдеры.
+            </p>
+            <p class="py-1 paragraph-event anim-paragraph-event">
+              Мероприятие проходит при поддержки государственных структур стран
+              – участников и освещается федеральными и интернет СМИ
+            </p>
+            <div class="arrow-box">
+              <a href="#raw" class="arrow"><i class="arrow-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="raw" class="raw">
+        <div class="raw-triangle raw-triangle-top"></div>
+        <div class="raw-triangle raw-triangle-bottom"></div>
+        <div class="container raw-container">
+          <h1 class="py-0 raw-header">Причины участия в RAW</h1>
+          <ul class="raw-list py-0">
+            <li class="raw-first">
+              <img class="py-4" src="img/icons/education.svg" alt="" />
+              <p>
+                Возможность представить свою продукцию потенциальным покупателям
+                и начать партнерство
+              </p>
+            </li>
+            <li class="raw-second">
+              <img class="py-4" src="img/icons/work.svg" alt="" />
+              <p>
+                Встреча более 150 представителей российской пищевой индустрии,
+                среди которых будут заинтересованные трейдеры, представители
+                крупных торговых сетей, производители и закупщики
+              </p>
+            </li>
+            <li class="raw-third">
+              <img class="py-4" src="img/icons/teamwork.svg" alt="" />
+              <p>
+                Возможность ознакомиться с реалиями российского пищевого рынка и
+                возможностями выхода на него
+              </p>
+            </li>
+          </ul>
+          <button class="btn reg btn-anim">Зарегистрироваться</button>
+          <div class="arrow-box">
+            <a href="#schedule" class="arrow"><i class="arrow-icon"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="schedule">
+        <div class="container">
+          <h1 class="py-2 schedule-title">Расписание</h1>
+          <ul class="timetable">
+            <li class="one">
+              <div class="time">9.00 - 10.00</div>
+              <p>Регистрация кофе брейк</p>
+            </li>
+            <li class="two">
+              <div class="time">10.00 - 10.30</div>
+              <p>Вступительное слово государственных структур</p>
+            </li>
+            <li class="three">
+              <div class="time">10.30 - 12.30</div>
+              <p>Воркшоп, встречи с российскими представителями</p>
+            </li>
+
+            <li class="four">
+              <div class="time">12.30 - 13.30</div>
+              <p>Ланч</p>
+            </li>
+          </ul>
+          <ul class="timetable timetable-flex">
+            <li class="seven">
+              <div class="time">13.30 - 15.30</div>
+              <p>Воркшоп, встречи с российскими представителями</p>
+            </li>
+            <li class="six">
+              <div class="time">15.30 - 16.30</div>
+              <p>
+                Мастер -класс от представителя крупной ритейл-группы X5 Retail
+                Group «Как иностранному производителю выйти на российский рынок»
+              </p>
+            </li>
+
+            <li class="five">
+              <div class="time">16.30 - 17.00</div>
+              <p>Вопросы и ответы</p>
+            </li>
+          </ul>
+          <div class="arrow-box">
+            <a href="#operator" class="arrow"><i class="arrow-icon"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="operator" class="operator">
+        <div class="operator-vector operator-vector-anim"></div>
+        <div class="operator-macbook"></div>
+        <div class="container">
+          <div class="operator-text">
+            <h1 class="py-1 operator-header">Оператор мероприятия</h1>
+            <h3 class="py-2 operator-header2">
+              Оператор Russian – Arabian Workshop – компания “To Russia With
+              Love”
+            </h3>
+            <p class="py-1 operator-paragraph">
+              To Russia With Love – это российская туристическая компания,
+              осуществляющая перевозку иностранных туристов в Россию по
+              следующим направлениям: туризм, бизнес-туризм, помощь для
+              иностранных бизнесменов в выходе на российский рынок, организация
+              мероприятий международного значения. Миссия компании: «Развитие
+              России как мирового туристического направления. Создание платформы
+              для поддержки иностранного бизнеса в Российской Федерации»
+            </p>
+            <a class="trwl py-1 operator-link" href="http://www.trwl.today"
+              >www.trwl.today</a
+            >
+            <button class="btn operator-btn">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer">
+        <p class="footer-title py-0">Russian Arabian workshop</p>
+        <p class="footer-number py-0">+7 (965) 279 9060</p>
+        <p class="footer-copy">
+          Copyright © 2019–2024 Russian Arabian workshop™. All rights reserved.
+        </p>
+      </footer>
+
+      <!-- Reg Form -->
+    </div>
+    <div class="reg-form">
+      <div class="close-container">
+        <div class="leftright"></div>
+        <div class="rightleft"></div>
+        <label class="close">close</label>
       </div>
-    </header>
+      <h2 class="py-1">Регистрация на мероприятие</h2>
+      <p class="py-2">Зарегистрироваться как:</p>
+      <div class="buttons">
+        <button class="btn toggle-btn member">Участник</button>
+        <button class="btn toggle-btn guest deactivate">Гость</button>
+      </div>
+      <form method="POST" id="form-member">
+        <div class="member-inputs">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Company name" />
+            <label for="name">Company name</label>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Official name for invoice, if different"
+            />
+            <label for="name">Official name for invoice, if different</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Official address" />
+            <label for="name">Official address</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Country / City  " />
+            <label for="name">Country / City</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Web-site" />
+            <label for="name">Web-site</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Company description" />
+            <label for="name">Company description</label>
+          </div>
+        </div>
+
+        <form method="POST" id="form-guest">
+          <div class="guest-inputs off">
+            <div class="form-group">
+              <input type="text" placeholder="Название компании" />
+              <label for="name">Название компании</label>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Должность" />
+              <label for="name">Должность</label>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="ФИО  " />
+              <label for="name">ФИО</label>
+            </div>
+            <div class="form-group">
+              <input type="phone" placeholder="Телефон" />
+              <label for="name">Телефон</label>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Вебсайт" />
+              <label for="name">Вебсайт</label>
+            </div>
+          </div>
+        </form>
+        <button type="submit" class="btn">Отправить заявку</button>
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
