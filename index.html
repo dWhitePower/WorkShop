@@ -235,7 +235,21 @@
 
       <!-- Reg Form -->
     </div>
-    <div class="reg-form ">
+    <div class="reg-form">
+        <div class="check-mark ">
+            <svg width="133px" height="133px" viewBox="0 0 133 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="check-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <circle id="filled-circle" fill="#c34646" cx="66.5" cy="66.5" r="54.5"></circle>
+                <circle id="white-circle" fill="#c34646" cx="66.5" cy="66.5" r="55.5"></circle>
+                <circle id="outline" stroke="#c34646" stroke-width="4" cx="66.5" cy="66.5" r="54.5"></circle>
+                <polyline id="check" stroke="#FFFFFF" stroke-width="4" points="41 70 56 85 92 49"></polyline>
+              </g>
+            </svg>
+            <p class="success">Message submitted successfully</p>
+        </div>
+      <div class="form-blur">
+      <!-- Check Mark -->
+      
       <div class="close-container">
         <div class="leftright"></div>
         <div class="center"></div>
@@ -286,7 +300,7 @@
             <input type="text" name="description" placeholder="Company description" />
             <label for="name">Company description</label>
           </div>
-          <button type="submit" name="submit" class="btn">Отправить заявку</button>
+          <button type="submit" name="submit" class="btn btn-submit">Отправить заявку</button>
         </div>
         
       </form>
@@ -299,7 +313,7 @@
         <input type="hidden" name="form_subject" value="Form Subject">
         <!-- END Hidden Required Fields -->
         
-        
+
           <div class="guest-inputs off">
             <div class="form-group">
               <input type="text" placeholder="Название компании" />
@@ -321,11 +335,11 @@
               <input type="text" placeholder="Вебсайт" />
               <label for="name">Вебсайт</label>
             </div>
-            <button type="submit" name="submit" class="btn">Отправить заявку</button>
+            <button type="submit" name="submit" class="btn btn-submit">Отправить заявку</button>
           </div>
         </form>
         
-      
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
