@@ -17,15 +17,23 @@ $(".reg, .nav-reg, .operator-btn").on("click", function(event) {
   $(".page-bg")
     .addClass("blur-layout")
     .removeClass("blur");
+  $(".nav")
+    .addClass("nav-away")
+    .removeClass("show-nav");
   $(".reg-form").addClass("active-form");
+  $(".close-container").removeClass("close-container-away");
 });
 
 $(".close-container").on("click", function(event) {
   $(".page-bg")
     .removeClass("blur-layout")
     .addClass("blur");
+  $(".nav")
+    .addClass("show-nav")
+    .removeClass("nav-away");
   $(".reg-form").removeClass("active-form");
-  $(".nav").css("position", "fixed");
+  $(this).addClass("close-container-away");
+  // $(".nav").css("position", "fixed");
 });
 
 $(".toggle-btn").on("click", function(e) {
