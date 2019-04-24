@@ -68,7 +68,7 @@ $(window).on("scroll", function() {
 });
 
 //E-mail Ajax Send
-$("form-member").submit(function() {
+$(".form-member").submit(function() {
   //Change
   var th = $(this);
   $.ajax({
