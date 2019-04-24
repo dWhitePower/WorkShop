@@ -249,6 +249,12 @@
         <button class="btn toggle-btn guest deactivate">Гость</button>
       </div>
       <form method="POST" action="mail.php" id="form-member">
+
+          <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="Arabian WorkShop">
+      <input type="hidden" name="admin_email" value="morgun056@gmail.com.com">
+      <input type="hidden" name="form_subject" value="Form Subject">
+      <!-- END Hidden Required Fields -->
       
 
         <div class="member-inputs">
@@ -286,6 +292,14 @@
       </form>
 
         <form method="POST" id="form-guest">
+
+          <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Arabian WorkShop">
+        <input type="hidden" name="admin_email" value="morgun056@gmail.com.com">
+        <input type="hidden" name="form_subject" value="Form Subject">
+        <!-- END Hidden Required Fields -->
+        
+        
           <div class="guest-inputs off">
             <div class="form-group">
               <input type="text" placeholder="Название компании" />
