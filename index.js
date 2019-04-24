@@ -75,8 +75,18 @@ $(window).on("scroll", function() {
   }
 });
 
+$(window).on("scroll", function() {
+  const num = 700;
+
+  if ($(window).scrollTop() > num) {
+    $(".header-images").addClass("header-images-away");
+  } else {
+    $(".header-images").removeClass("header-images-away");
+  }
+});
+
 //E-mail Ajax Send
-$("#form-member").submit(function() {
+$("#form-member, #form-guest").submit(function() {
   //Change
   var th = $(this);
   $.ajax({
