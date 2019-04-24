@@ -232,42 +232,41 @@
         <button class="btn toggle-btn guest deactivate">Гость</button>
       </div>
       <form method="POST" action="mail.php" id="form-member">
-        <!-- Hidden Required Fields -->
-        <input type="hidden" name="project_name" value="Arabian Workshop">
-        <input type="hidden" name="admin_email" value="morgun056@gmail.com.com">
-        <input type="hidden" name="form_subject" value="Заявка с формы">
-
-        <input type="text" name="phone" placeholder="phone">
+      
 
         <div class="member-inputs">
           <div class="form-group">
-            <input type="text" id="name" placeholder="Company name" />
+            <input type="text" name="company" id="name" placeholder="Company name" />
             <label for="name">Company name</label>
           </div>
           <div class="form-group">
             <input
               type="text"
+              name="invoice"
               placeholder="Official name for invoice, if different"
             />
             <label for="name">Official name for invoice, if different</label>
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Official address" />
+            <input type="text" name="address" placeholder="Official address" />
             <label for="name">Official address</label>
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Country / City  " />
+            <input type="text" name="country-city" placeholder="Country / City  " />
             <label for="name">Country / City</label>
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Web-site" />
+            <input type="text" name="web-site" placeholder="Web-site" />
             <label for="name">Web-site</label>
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Company description" />
+            <input type="text" name="description" placeholder="Company description" />
             <label for="name">Company description</label>
           </div>
+          <button type="submit" name="submit" class="btn">Отправить заявку</button>
         </div>
+        
+      </form>
 
         <form method="POST" id="form-guest">
           <div class="guest-inputs off">
@@ -291,10 +290,11 @@
               <input type="text" placeholder="Вебсайт" />
               <label for="name">Вебсайт</label>
             </div>
+            <button type="submit" name="submit" class="btn">Отправить заявку</button>
           </div>
         </form>
-        <button type="submit" class="btn">Отправить заявку</button>
-      </form>
+        
+      
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
