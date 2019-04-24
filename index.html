@@ -219,7 +219,7 @@
 
       <!-- Reg Form -->
     </div>
-    <div class="reg-form active-form">
+    <div class="reg-form">
       <div class="close-container">
         <div class="leftright"></div>
         <div class="rightleft"></div>
@@ -231,7 +231,7 @@
         <button class="btn toggle-btn member">Участник</button>
         <button class="btn toggle-btn guest deactivate">Гость</button>
       </div>
-      <form id="form-member">
+      <form method="POST" action="mail.php" id="form-member">
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="Arabian Workshop">
         <input type="hidden" name="admin_email" value="morgun056@gmail.com.com">
