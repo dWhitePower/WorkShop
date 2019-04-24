@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway"
       rel="stylesheet"
@@ -217,7 +219,7 @@
 
       <!-- Reg Form -->
     </div>
-    <div class="reg-form">
+    <div class="reg-form active-form">
       <div class="close-container">
         <div class="leftright"></div>
         <div class="rightleft"></div>
@@ -230,6 +232,11 @@
         <button class="btn toggle-btn guest deactivate">Гость</button>
       </div>
       <form method="POST" id="form-member">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Arabian Workshop">
+        <input type="hidden" name="admin_email" value="morgun056@gmail.com.com">
+        <input type="hidden" name="form_subject" value="Заявка с формы">
+
         <div class="member-inputs">
           <div class="form-group">
             <input type="text" id="name" placeholder="Company name" />
