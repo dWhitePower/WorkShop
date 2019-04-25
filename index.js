@@ -735,3 +735,114 @@ if (width <= 801) {
 // })
 //   .setClassToggle(".event-gradient", "event-gradient-show")
 //   .addTo(controller);
+
+$("#radio-b").on("click", function(e) {
+  $(".nav-link-1").text("ABOUT EVENT");
+  $(".nav-link-2").text("SCHEDULE");
+  $(".nav-link-3").text("CONTACTS");
+  $(".nav-link-4")
+    .text("REGISTRATION")
+    .css("font-family", "Raleway");
+  $(".header-text .paragraph").text(
+    "Is a platform for creating a mutually beneficial partnership and a direct opportunity for foreign companies to penetrate   Russian market."
+  );
+  $(".about-title").text("About event");
+  $(".paragraph-event:first").text(
+    "Unique event where businessmen  of the food industry  from GCC and the Middle East meet  Russian representatives of the  biggest retail  groups,  hypermarkets,  HORECA business, food complexes, traders, and food producers."
+  );
+  $(".paragraph-event:last").text(
+    "The event is held with the support of state structures of the participating countries and is covered by federal and internet Media."
+  );
+  $(".raw-header").text("Reasons to participate in RAW:");
+  $(".raw-list li:first p").text(
+    " The opportunity to present your products to potential buyers and start a partnership"
+  );
+  $(".raw-list li:nth-child(2) p").text(
+    "Meeting over 150 representatives of the Russian food industry, including interested traders, representatives of large retail chains, manufacturers and purchasers"
+  );
+
+  $(".raw-list li:last p").text(
+    "The opportunity to get acquainted with the realities of the Russian food market and step by step to get acquainted with how to start working on the Russian market with the help of a master class from the top manager of the largest retail group"
+  );
+
+  $(".raw .reg").text("Registration");
+
+  $(".schedule-title").text("Schedule");
+
+  $(".one p").text("Registration, coffee break");
+  $(".two p").text("Opening remarks by state structures");
+  $(".three p").text("Workshop, meetings with Russian representatives");
+  $(".four p").text("Lunch");
+  $(".five p").text("Workshop, meetings with Russian representatives");
+  $(".six p").text(
+    " Masterclass from a representative of a large retail group X5 Retail Group «How  foreign food producer can   enter Russian market and work successfully»"
+  );
+  $(".seven p").text("Questions and Answers");
+
+  $(".operator-header").text("Event Operator");
+
+  $(".operator-header2").text(
+    "Operator Russian - Arabian Workshop - Company “To Russia With Love”"
+  );
+
+  $(".operator-paragraph").text(
+    "To Russia With Love is a Russian travel company that transports foreign tourists to Russia in the following areas: tourism, business tourism, assistance for foreign businessmen in entering the Russian market, organizing events of international importance. The company's mission:  «Development of Russia as a global tourist destination. Creating a platform to support foreign business in the Russian Federation»"
+  );
+
+  $(".operator button").text("Feedback");
+});
+
+$("#radio-a").on("click", function(e) {
+  $(".nav-link-1").text("О МЕРОПРИЯТИИ");
+  $(".nav-link-2").text("РАСПИСАНИЕ");
+  $(".nav-link-3").text("КОНТАКТЫ");
+  $(".nav-link-4")
+    .text("РЕГИСТРАЦИЯ")
+    .css("font-family", "Arial");
+  $(".header-text .paragraph").text(
+    "Это площадка для создания взаимовыгодного партнерства и прямая возможность для иностранных компаний выйти на российский рынок."
+  );
+  $(".about-title").text("О мероприятии");
+  $(".paragraph-event:first").text(
+    "Мероприятие проходит при поддержки государственных структур стран – участников и освещается федеральными и интернет СМИ"
+  );
+  $(".paragraph-event:last").text(
+    "Мероприятие проходит при поддержки государственных структур стран – участников и освещается федеральными и интернет СМИ"
+  );
+  $(".raw-header").text("Причины участия в RAW");
+  $(".raw-list li:first p").text(
+    "Возможность представить свою продукцию потенциальным покупателям и начать партнерство"
+  );
+  $(".raw-list li:nth-child(2) p").text(
+    "Встреча более 150 представителей российской пищевой индустрии, среди которых будут заинтересованные трейдеры, представители крупных торговых сетей, производители и закупщики"
+  );
+  $(".raw-list li:last p").text(
+    "Возможность ознакомиться с реалиями российского пищевого рынка и возможностями выхода на него"
+  );
+  $(".raw .reg").text("Зарегистрироваться");
+
+  $(".schedule-title").text("Расписание");
+
+  $(".one p").text("Регистрация кофе брейк");
+  $(".two p").text("Вступительное слово государственных структур");
+  $(".three p").text("Воркшоп, встречи с российскими представителями");
+  $(".four p").text("Ланч");
+  $(".five p").text("Воркшоп, встречи с российскими представителями");
+  $(".six p").text(
+    "Мастер -класс от представителя крупной ритейл-группы X5 Retail Group «Как иностранному производителю выйти на российский рынок»"
+  );
+  $(".seven p").text("Вопросы и ответы");
+
+  $(".operator-header").text("Оператор мероприятия");
+
+  $(".operator-header2").text(
+    "Оператор Russian – Arabian Workshop – компания “To Russia With Love”"
+  );
+
+  $(".operator-paragraph").text(
+    "To Russia With Love – это российская туристическая компания, осуществляющая перевозку иностранных туристов в Россию по следующим направлениям: туризм, бизнес-туризм, помощь для иностранных бизнесменов в выходе на российский рынок, организация мероприятий международного значения. Миссия компании: «Развитие России как мирового туристического направления. Создание платформы для поддержки иностранного бизнеса в Российской Федерации»"
+  );
+
+  $(".operator button").text("Напишите нам");
+});
+// });
