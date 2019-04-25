@@ -124,204 +124,614 @@ $("#form-member, #form-guest").submit(function() {
 
 // ScrollMagic
 
-const controller = new ScrollMagic.Controller();
+const width = window.screen.width;
 
-// Header Animations
-const ourScence = new ScrollMagic.Scene({
-  triggerElement: ".nav"
-})
-  .setClassToggle(".header-gradient", "fade-in")
-  .addTo(controller);
+console.log(width);
 
-const ourScence2 = new ScrollMagic.Scene({
-  triggerElement: ".nav"
-})
-  .setClassToggle(".header-image", "show")
-  .addTo(controller);
+if (width <= 600) {
+  const controller = new ScrollMagic.Controller();
 
-const ourScence3 = new ScrollMagic.Scene({
-  triggerElement: ".nav"
-})
-  .setClassToggle(".anim-span-1", "show-title-1")
-  .addTo(controller);
+  // Header Animations
+  const ourScence = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".header-gradient", "fade-in")
+    .addTo(controller);
 
-const ourScence4 = new ScrollMagic.Scene({
-  triggerElement: ".nav"
-})
-  .setClassToggle(".anim-span-2", "show-title-2")
-  .addTo(controller);
+  const ourScence2 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".header-image", "show")
+    .addTo(controller);
 
-const ourScence5 = new ScrollMagic.Scene({
-  triggerElement: ".nav"
-})
-  .setClassToggle(".anim-span-3", "show-title-3")
-  .addTo(controller);
+  const ourScence3 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-span-1", "show-title-1")
+    .addTo(controller);
 
-const ourScence6 = new ScrollMagic.Scene({
-  triggerElement: ".nav"
-})
-  .setClassToggle(".anim-paragraph", "show-paragraph")
-  .addTo(controller);
+  const ourScence4 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-span-2", "show-title-2")
+    .addTo(controller);
 
-// event
-const ourScence7 = new ScrollMagic.Scene({
-  triggerElement: ".about-title"
-})
-  .setClassToggle(".about-title", "anim-about-title")
-  .addTo(controller);
+  const ourScence5 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-span-3", "show-title-3")
+    .addTo(controller);
 
-const ourScence8 = new ScrollMagic.Scene({
-  triggerElement: ".about-title"
-})
-  .setClassToggle(".paragraph-event", "show-paragraph")
-  .addTo(controller);
+  const ourScence6 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-paragraph", "show-paragraph")
+    .addTo(controller);
 
-// raw
-const ourScence9 = new ScrollMagic.Scene({
-  triggerElement: ".raw-header"
-})
-  .setClassToggle(".raw-header", "show-raw-header")
-  .addTo(controller);
+  // event
+  const ourScence7 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".about-title", "anim-about-title")
+    .addTo(controller);
 
-const ourScence10 = new ScrollMagic.Scene({
-  triggerElement: ".raw-header"
-})
-  .setClassToggle(".raw-first", "raw-first-show")
-  .addTo(controller);
+  const ourScence8 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".paragraph-event", "show-paragraph")
+    .addTo(controller);
 
-const ourScence11 = new ScrollMagic.Scene({
-  triggerElement: ".raw-header"
-})
-  .setClassToggle(".raw-second", "raw-second-show")
-  .addTo(controller);
+  // raw
+  const ourScence9 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".raw-header", "show-raw-header")
+    .addTo(controller);
 
-const ourScence12 = new ScrollMagic.Scene({
-  triggerElement: ".raw-header"
-})
-  .setClassToggle(".raw-third", "raw-third-show")
-  .addTo(controller);
+  const ourScence10 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".raw-first", "raw-first-show")
+    .addTo(controller);
 
-// Operator
+  const ourScence11 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".raw-second", "raw-second-show")
+    .addTo(controller);
 
-const ourScence13 = new ScrollMagic.Scene({
-  triggerElement: ".operator-header"
-})
-  .setClassToggle(".operator-header", "operator-header-show")
-  .addTo(controller);
+  const ourScence12 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".raw-third", "raw-third-show")
+    .addTo(controller);
 
-const ourScence14 = new ScrollMagic.Scene({
-  triggerElement: ".operator-header"
-})
-  .setClassToggle(".operator-header2", "operator-header2-show")
-  .addTo(controller);
+  // Operator
 
-const ourScence15 = new ScrollMagic.Scene({
-  triggerElement: ".operator-header"
-})
-  .setClassToggle(".operator-paragraph", "operator-paragraph-show")
-  .addTo(controller);
+  const ourScence13 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".operator-header", "operator-header-show")
+    .addTo(controller);
 
-const ourScence16 = new ScrollMagic.Scene({
-  triggerElement: ".operator-header"
-})
-  .setClassToggle(".operator-link", "operator-link-show")
-  .addTo(controller);
+  const ourScence14 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".operator-header2", "operator-header2-show")
+    .addTo(controller);
 
-const ourScence17 = new ScrollMagic.Scene({
-  triggerElement: ".operator-header"
-})
-  .setClassToggle(".operator-btn", "operator-btn-show")
-  .addTo(controller);
+  const ourScence15 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".operator-paragraph", "operator-paragraph-show")
+    .addTo(controller);
 
-// Btn
+  const ourScence16 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".operator-link", "operator-link-show")
+    .addTo(controller);
 
-const ourScenceBtn = new ScrollMagic.Scene({
-  triggerElement: ".raw-header"
-})
-  .setClassToggle(".btn-anim", "btn-show")
-  .addTo(controller);
+  const ourScence17 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".operator-btn", "operator-btn-show")
+    .addTo(controller);
 
-// Backgrounds
-const ourScence18 = new ScrollMagic.Scene({
-  triggerElement: ".raw-header"
-})
-  .setClassToggle(".raw-triangle-top", "raw-triangle-top-show")
-  .addTo(controller);
+  // Btn
 
-const ourScence19 = new ScrollMagic.Scene({
-  triggerElement: ".raw-header"
-})
-  .setClassToggle(".raw-triangle-bottom", "raw-triangle-bottom-show")
-  .addTo(controller);
+  const ourScenceBtn = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".btn-anim", "btn-show")
+    .addTo(controller);
 
-const ourScence20 = new ScrollMagic.Scene({
-  triggerElement: ".operator-header"
-})
-  .setClassToggle(".operator-vector", "operator-vector-show")
-  .addTo(controller);
+  // Backgrounds
+  const ourScence18 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".raw-triangle-top", "raw-triangle-top-show")
+    .addTo(controller);
 
-const ourScence21 = new ScrollMagic.Scene({
-  triggerElement: ".operator-header"
-})
-  .setClassToggle(".operator-macbook", "operator-macbook-show")
-  .addTo(controller);
+  const ourScence19 = new ScrollMagic.Scene({
+    triggerElement: ".navr"
+  })
+    .setClassToggle(".raw-triangle-bottom", "raw-triangle-bottom-show")
+    .addTo(controller);
 
-const ourScence22 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".schedule-title", "schedule-title-show")
-  .addTo(controller);
+  const ourScence20 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".operator-vector", "operator-vector-show")
+    .addTo(controller);
 
-const ourScence23 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".one", "one-show")
-  .addTo(controller);
+  const ourScence21 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".operator-macbook", "operator-macbook-show")
+    .addTo(controller);
 
-const ourScence24 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".two", "two-show")
-  .addTo(controller);
+  const ourScence22 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".schedule-title", "schedule-title-show")
+    .addTo(controller);
 
-const ourScence25 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".three", "three-show")
-  .addTo(controller);
+  const ourScence23 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".one", "one-show")
+    .addTo(controller);
 
-const ourScence26 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".four", "four-show")
-  .addTo(controller);
+  const ourScence24 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".two", "two-show")
+    .addTo(controller);
 
-const ourScence29 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".seven", "seven-show")
-  .addTo(controller);
+  const ourScence25 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".three", "three-show")
+    .addTo(controller);
 
-const ourScence28 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".six", "six-show")
-  .addTo(controller);
+  const ourScence26 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".four", "four-show")
+    .addTo(controller);
 
-const ourScence27 = new ScrollMagic.Scene({
-  triggerElement: ".schedule-title"
-})
-  .setClassToggle(".five", "five-show")
-  .addTo(controller);
+  const ourScence29 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".seven", "seven-show")
+    .addTo(controller);
 
-const ourScence30 = new ScrollMagic.Scene({
-  triggerElement: ".about-title"
-})
-  .setClassToggle(".event-background", "event-background-show")
-  .addTo(controller);
+  const ourScence28 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".six", "six-show")
+    .addTo(controller);
 
-const ourScence31 = new ScrollMagic.Scene({
-  triggerElement: ".about-title"
-})
-  .setClassToggle(".event-gradient", "event-gradient-show")
-  .addTo(controller);
+  const ourScence27 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".five", "five-show")
+    .addTo(controller);
+
+  const ourScence30 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".event-background", "event-background-show")
+    .addTo(controller);
+
+  const ourScence31 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".event-gradient", "event-gradient-show")
+    .addTo(controller);
+} else {
+  const controller = new ScrollMagic.Controller();
+
+  // Header Animations
+  const ourScence = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".header-gradient", "fade-in")
+    .addTo(controller);
+
+  const ourScence2 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".header-image", "show")
+    .addTo(controller);
+
+  const ourScence3 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-span-1", "show-title-1")
+    .addTo(controller);
+
+  const ourScence4 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-span-2", "show-title-2")
+    .addTo(controller);
+
+  const ourScence5 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-span-3", "show-title-3")
+    .addTo(controller);
+
+  const ourScence6 = new ScrollMagic.Scene({
+    triggerElement: ".nav"
+  })
+    .setClassToggle(".anim-paragraph", "show-paragraph")
+    .addTo(controller);
+
+  // event
+  const ourScence7 = new ScrollMagic.Scene({
+    triggerElement: ".about-title"
+  })
+    .setClassToggle(".about-title", "anim-about-title")
+    .addTo(controller);
+
+  const ourScence8 = new ScrollMagic.Scene({
+    triggerElement: ".about-title"
+  })
+    .setClassToggle(".paragraph-event", "show-paragraph")
+    .addTo(controller);
+
+  // raw
+  const ourScence9 = new ScrollMagic.Scene({
+    triggerElement: ".raw-header"
+  })
+    .setClassToggle(".raw-header", "show-raw-header")
+    .addTo(controller);
+
+  const ourScence10 = new ScrollMagic.Scene({
+    triggerElement: ".raw-header"
+  })
+    .setClassToggle(".raw-first", "raw-first-show")
+    .addTo(controller);
+
+  const ourScence11 = new ScrollMagic.Scene({
+    triggerElement: ".raw-header"
+  })
+    .setClassToggle(".raw-second", "raw-second-show")
+    .addTo(controller);
+
+  const ourScence12 = new ScrollMagic.Scene({
+    triggerElement: ".raw-header"
+  })
+    .setClassToggle(".raw-third", "raw-third-show")
+    .addTo(controller);
+
+  // Operator
+
+  const ourScence13 = new ScrollMagic.Scene({
+    triggerElement: ".operator-header"
+  })
+    .setClassToggle(".operator-header", "operator-header-show")
+    .addTo(controller);
+
+  const ourScence14 = new ScrollMagic.Scene({
+    triggerElement: ".operator-header"
+  })
+    .setClassToggle(".operator-header2", "operator-header2-show")
+    .addTo(controller);
+
+  const ourScence15 = new ScrollMagic.Scene({
+    triggerElement: ".operator-header"
+  })
+    .setClassToggle(".operator-paragraph", "operator-paragraph-show")
+    .addTo(controller);
+
+  const ourScence16 = new ScrollMagic.Scene({
+    triggerElement: ".operator-header"
+  })
+    .setClassToggle(".operator-link", "operator-link-show")
+    .addTo(controller);
+
+  const ourScence17 = new ScrollMagic.Scene({
+    triggerElement: ".operator-header"
+  })
+    .setClassToggle(".operator-btn", "operator-btn-show")
+    .addTo(controller);
+
+  // Btn
+
+  const ourScenceBtn = new ScrollMagic.Scene({
+    triggerElement: ".raw-header"
+  })
+    .setClassToggle(".btn-anim", "btn-show")
+    .addTo(controller);
+
+  // Backgrounds
+  const ourScence18 = new ScrollMagic.Scene({
+    triggerElement: ".raw-header"
+  })
+    .setClassToggle(".raw-triangle-top", "raw-triangle-top-show")
+    .addTo(controller);
+
+  const ourScence19 = new ScrollMagic.Scene({
+    triggerElement: ".raw-header"
+  })
+    .setClassToggle(".raw-triangle-bottom", "raw-triangle-bottom-show")
+    .addTo(controller);
+
+  const ourScence20 = new ScrollMagic.Scene({
+    triggerElement: ".operator-header"
+  })
+    .setClassToggle(".operator-vector", "operator-vector-show")
+    .addTo(controller);
+
+  const ourScence21 = new ScrollMagic.Scene({
+    triggerElement: ".operator-header"
+  })
+    .setClassToggle(".operator-macbook", "operator-macbook-show")
+    .addTo(controller);
+
+  const ourScence22 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".schedule-title", "schedule-title-show")
+    .addTo(controller);
+
+  const ourScence23 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".one", "one-show")
+    .addTo(controller);
+
+  const ourScence24 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".two", "two-show")
+    .addTo(controller);
+
+  const ourScence25 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".three", "three-show")
+    .addTo(controller);
+
+  const ourScence26 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".four", "four-show")
+    .addTo(controller);
+
+  const ourScence29 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".seven", "seven-show")
+    .addTo(controller);
+
+  const ourScence28 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".six", "six-show")
+    .addTo(controller);
+
+  const ourScence27 = new ScrollMagic.Scene({
+    triggerElement: ".schedule-title"
+  })
+    .setClassToggle(".five", "five-show")
+    .addTo(controller);
+
+  const ourScence30 = new ScrollMagic.Scene({
+    triggerElement: ".about-title"
+  })
+    .setClassToggle(".event-background", "event-background-show")
+    .addTo(controller);
+
+  const ourScence31 = new ScrollMagic.Scene({
+    triggerElement: ".about-title"
+  })
+    .setClassToggle(".event-gradient", "event-gradient-show")
+    .addTo(controller);
+}
+
+// const controller = new ScrollMagic.Controller();
+
+// // Header Animations
+// const ourScence = new ScrollMagic.Scene({
+//   triggerElement: ".nav"
+// })
+//   .setClassToggle(".header-gradient", "fade-in")
+//   .addTo(controller);
+
+// const ourScence2 = new ScrollMagic.Scene({
+//   triggerElement: ".nav"
+// })
+//   .setClassToggle(".header-image", "show")
+//   .addTo(controller);
+
+// const ourScence3 = new ScrollMagic.Scene({
+//   triggerElement: ".nav"
+// })
+//   .setClassToggle(".anim-span-1", "show-title-1")
+//   .addTo(controller);
+
+// const ourScence4 = new ScrollMagic.Scene({
+//   triggerElement: ".nav"
+// })
+//   .setClassToggle(".anim-span-2", "show-title-2")
+//   .addTo(controller);
+
+// const ourScence5 = new ScrollMagic.Scene({
+//   triggerElement: ".nav"
+// })
+//   .setClassToggle(".anim-span-3", "show-title-3")
+//   .addTo(controller);
+
+// const ourScence6 = new ScrollMagic.Scene({
+//   triggerElement: ".nav"
+// })
+//   .setClassToggle(".anim-paragraph", "show-paragraph")
+//   .addTo(controller);
+
+// // event
+// const ourScence7 = new ScrollMagic.Scene({
+//   triggerElement: ".about-title"
+// })
+//   .setClassToggle(".about-title", "anim-about-title")
+//   .addTo(controller);
+
+// const ourScence8 = new ScrollMagic.Scene({
+//   triggerElement: ".about-title"
+// })
+//   .setClassToggle(".paragraph-event", "show-paragraph")
+//   .addTo(controller);
+
+// // raw
+// const ourScence9 = new ScrollMagic.Scene({
+//   triggerElement: ".raw-header"
+// })
+//   .setClassToggle(".raw-header", "show-raw-header")
+//   .addTo(controller);
+
+// const ourScence10 = new ScrollMagic.Scene({
+//   triggerElement: ".raw-header"
+// })
+//   .setClassToggle(".raw-first", "raw-first-show")
+//   .addTo(controller);
+
+// const ourScence11 = new ScrollMagic.Scene({
+//   triggerElement: ".raw-header"
+// })
+//   .setClassToggle(".raw-second", "raw-second-show")
+//   .addTo(controller);
+
+// const ourScence12 = new ScrollMagic.Scene({
+//   triggerElement: ".raw-header"
+// })
+//   .setClassToggle(".raw-third", "raw-third-show")
+//   .addTo(controller);
+
+// // Operator
+
+// const ourScence13 = new ScrollMagic.Scene({
+//   triggerElement: ".operator-header"
+// })
+//   .setClassToggle(".operator-header", "operator-header-show")
+//   .addTo(controller);
+
+// const ourScence14 = new ScrollMagic.Scene({
+//   triggerElement: ".operator-header"
+// })
+//   .setClassToggle(".operator-header2", "operator-header2-show")
+//   .addTo(controller);
+
+// const ourScence15 = new ScrollMagic.Scene({
+//   triggerElement: ".operator-header"
+// })
+//   .setClassToggle(".operator-paragraph", "operator-paragraph-show")
+//   .addTo(controller);
+
+// const ourScence16 = new ScrollMagic.Scene({
+//   triggerElement: ".operator-header"
+// })
+//   .setClassToggle(".operator-link", "operator-link-show")
+//   .addTo(controller);
+
+// const ourScence17 = new ScrollMagic.Scene({
+//   triggerElement: ".operator-header"
+// })
+//   .setClassToggle(".operator-btn", "operator-btn-show")
+//   .addTo(controller);
+
+// // Btn
+
+// const ourScenceBtn = new ScrollMagic.Scene({
+//   triggerElement: ".raw-header"
+// })
+//   .setClassToggle(".btn-anim", "btn-show")
+//   .addTo(controller);
+
+// // Backgrounds
+// const ourScence18 = new ScrollMagic.Scene({
+//   triggerElement: ".raw-header"
+// })
+//   .setClassToggle(".raw-triangle-top", "raw-triangle-top-show")
+//   .addTo(controller);
+
+// const ourScence19 = new ScrollMagic.Scene({
+//   triggerElement: ".raw-header"
+// })
+//   .setClassToggle(".raw-triangle-bottom", "raw-triangle-bottom-show")
+//   .addTo(controller);
+
+// const ourScence20 = new ScrollMagic.Scene({
+//   triggerElement: ".operator-header"
+// })
+//   .setClassToggle(".operator-vector", "operator-vector-show")
+//   .addTo(controller);
+
+// const ourScence21 = new ScrollMagic.Scene({
+//   triggerElement: ".operator-header"
+// })
+//   .setClassToggle(".operator-macbook", "operator-macbook-show")
+//   .addTo(controller);
+
+// const ourScence22 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".schedule-title", "schedule-title-show")
+//   .addTo(controller);
+
+// const ourScence23 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".one", "one-show")
+//   .addTo(controller);
+
+// const ourScence24 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".two", "two-show")
+//   .addTo(controller);
+
+// const ourScence25 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".three", "three-show")
+//   .addTo(controller);
+
+// const ourScence26 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".four", "four-show")
+//   .addTo(controller);
+
+// const ourScence29 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".seven", "seven-show")
+//   .addTo(controller);
+
+// const ourScence28 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".six", "six-show")
+//   .addTo(controller);
+
+// const ourScence27 = new ScrollMagic.Scene({
+//   triggerElement: ".schedule-title"
+// })
+//   .setClassToggle(".five", "five-show")
+//   .addTo(controller);
+
+// const ourScence30 = new ScrollMagic.Scene({
+//   triggerElement: ".about-title"
+// })
+//   .setClassToggle(".event-background", "event-background-show")
+//   .addTo(controller);
+
+// const ourScence31 = new ScrollMagic.Scene({
+//   triggerElement: ".about-title"
+// })
+//   .setClassToggle(".event-gradient", "event-gradient-show")
+//   .addTo(controller);
