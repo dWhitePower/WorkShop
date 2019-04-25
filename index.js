@@ -128,7 +128,7 @@ const width = window.screen.width;
 
 console.log(width);
 
-if (width <= 600) {
+if (width <= 801) {
   const controller = new ScrollMagic.Controller();
 
   // Header Animations
