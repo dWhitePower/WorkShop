@@ -790,6 +790,16 @@ $("#radio-b").on("click", function(e) {
   );
 
   $(".operator button").text("Feedback");
+
+  $(".form-blur h2").text("Registration to event");
+
+  $(".form-blur p").text("Registartion as:");
+
+  $(".form-blur .buttons .member").text("Participant");
+
+  $(".form-blur .buttons .guest").text("Guest");
+
+  $(".form-blur button[type='submit']").text("Send request");
 });
 
 $("#radio-a").on("click", function(e) {
@@ -844,5 +854,15 @@ $("#radio-a").on("click", function(e) {
   );
 
   $(".operator button").text("Напишите нам");
+
+  $(".form-blur h2").text("Регистрация на мероприятие");
+
+  $(".form-blur p").text("Зарегистрироваться как:");
+
+  $(".form-blur .buttons .member").text("Участник");
+
+  $(".form-blur .buttons .guest").text("Гостьt");
+
+  $(".form-blur button[type='submit']").text("Отправить заявку");
 });
 // });
