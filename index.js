@@ -13,6 +13,7 @@ $(".arrow, .nav-menu a, .nav-logo").on("click", function(event) {
   }
 });
 
+//
 $(".reg, .nav-reg, .operator-btn").on("click", function(event) {
   $(".page-bg")
     .addClass("blur-layout")
@@ -28,6 +29,7 @@ $(".reg, .nav-reg, .operator-btn").on("click", function(event) {
     $(".form-blur").css("filter", "blur(0)");
   }
 });
+//
 
 $(".close-container").on("click", function(event) {
   $(".page-bg")
