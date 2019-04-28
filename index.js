@@ -55,6 +55,7 @@ $(".toggle-btn").on("click", function(e) {
     $(".guest-inputs")
       .addClass("on")
       .removeClass("off");
+    $(".member-inputs .form-group input").val("");
   } else {
     $(this).removeClass("deactivate");
     $(this)
@@ -66,6 +67,7 @@ $(".toggle-btn").on("click", function(e) {
     $(".guest-inputs")
       .addClass("off")
       .removeClass("on");
+    $(".member-inputs .form-group input").val("");
   }
 });
 
@@ -802,6 +804,88 @@ $("#radio-b").on("click", function(e) {
   $(".form-blur .buttons .guest").text("Guest");
 
   $(".form-blur button[type='submit']").text("Send request");
+
+  // Guest
+  $(".guest-inputs .form-group:nth-child(1) input").attr(
+    "placeholder",
+    "Company name"
+  );
+
+  $(".guest-inputs .form-group:nth-child(1) label").text("Company name");
+
+  $(".guest-inputs .form-group:nth-child(2) input").attr("placeholder", "Post");
+
+  $(".guest-inputs .form-group:nth-child(2) label").text("Post");
+
+  $(".guest-inputs .form-group:nth-child(3) input").attr(
+    "placeholder",
+    "Full name"
+  );
+
+  $(".guest-inputs .form-group:nth-child(3) label").text("Full name");
+
+  $(".guest-inputs .form-group:nth-child(4) input").attr(
+    "placeholder",
+    "Phone number"
+  );
+
+  $(".guest-inputs .form-group:nth-child(4) label").text("Phone number");
+
+  $(".guest-inputs .form-group:nth-child(5) input").attr(
+    "placeholder",
+    "Web site"
+  );
+
+  $(".guest-inputs .form-group:nth-child(5) label").text("Web site");
+
+  // Member
+  $(".member-inputs .form-group:nth-child(1) input").attr(
+    "placeholder",
+    "Company name"
+  );
+
+  $(".member-inputs .form-group:nth-child(1) label").text("Company name");
+
+  $(".member-inputs .form-group:nth-child(2) input").attr(
+    "placeholder",
+    "Official name for invoice, if defferent"
+  );
+
+  $(".member-inputs .form-group:nth-child(2) label").text(
+    "Official name for invoice, if defferent"
+  );
+
+  $(".member-inputs .form-group:nth-child(3) input").attr(
+    "placeholder",
+    "Official address"
+  );
+
+  $(".member-inputs .form-group:nth-child(3) label").text("Official address");
+
+  $(".member-inputs .form-group:nth-child(4) input").attr(
+    "placeholder",
+    "Country / City"
+  );
+
+  $(".member-inputs .form-group:nth-child(4) label").text("Country / City");
+
+  $(".member-inputs .form-group:nth-child(5) input").attr(
+    "placeholder",
+    "Web site"
+  );
+
+  $(".member-inputs .form-group:nth-child(5) label").text("Web site");
+
+  $(".member-inputs .form-group:nth-child(6) input").attr(
+    "placeholder",
+    "Company description"
+  );
+
+  $(".member-inputs .form-group:nth-child(6) label").text(
+    "Company description"
+  );
+
+  $(".member-inputs .form-group input").val("");
 });
 
 $("#radio-a").on("click", function(e) {
@@ -863,8 +947,86 @@ $("#radio-a").on("click", function(e) {
 
   $(".form-blur .buttons .member").text("Участник");
 
-  $(".form-blur .buttons .guest").text("Гостьt");
+  $(".form-blur .buttons .guest").text("Гость");
 
   $(".form-blur button[type='submit']").text("Отправить заявку");
+
+  $(".guest-inputs .form-group:nth-child(1) input").attr(
+    "placeholder",
+    "Название компании"
+  );
+
+  $(".guest-inputs .form-group:nth-child(1) label").text("Название компании");
+
+  $(".guest-inputs .form-group:nth-child(2) input").attr(
+    "placeholder",
+    "Должность"
+  );
+
+  $(".guest-inputs .form-group:nth-child(2) label").text("Должность");
+
+  $(".guest-inputs .form-group:nth-child(3) input").attr("placeholder", "ФИО");
+
+  $(".guest-inputs .form-group:nth-child(3) label").text("ФИО");
+
+  $(".guest-inputs .form-group:nth-child(4) input").attr(
+    "placeholder",
+    "Телефон"
+  );
+
+  $(".guest-inputs .form-group:nth-child(4) label").text("Телефон");
+
+  $(".guest-inputs .form-group:nth-child(5) input").attr(
+    "placeholder",
+    "Вебсайт"
+  );
+
+  $(".guest-inputs .form-group:nth-child(5) label").text("Вебсайт");
+
+  $(".member-inputs .form-group:nth-child(1) input").attr(
+    "placeholder",
+    "Название компании"
+  );
+
+  $(".member-inputs .form-group:nth-child(1) label").text("Название компании");
+
+  $(".member-inputs .form-group:nth-child(2) input").attr(
+    "placeholder",
+    "Официальное название для квитанции, если отличается"
+  );
+
+  $(".member-inputs .form-group:nth-child(2) label").text(
+    "Официальное название для квитанции, если отличается"
+  );
+
+  $(".member-inputs .form-group:nth-child(3) input").attr(
+    "placeholder",
+    "Официальный адрес"
+  );
+
+  $(".member-inputs .form-group:nth-child(3) label").text("Официальный адрес");
+
+  $(".member-inputs .form-group:nth-child(4) input").attr(
+    "placeholder",
+    "Страна / Город"
+  );
+
+  $(".member-inputs .form-group:nth-child(4) label").text("Страна / Город");
+
+  $(".member-inputs .form-group:nth-child(5) input").attr(
+    "placeholder",
+    "Вебсайт"
+  );
+
+  $(".member-inputs .form-group:nth-child(5) label").text("Вебсайт");
+
+  $(".member-inputs .form-group:nth-child(6) input").attr(
+    "placeholder",
+    "Описание компании"
+  );
+
+  $(".member-inputs .form-group:nth-child(6) label").text("Описание компании");
+
+  $(".member-inputs .form-group input").val("");
 });
 // });
