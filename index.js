@@ -44,7 +44,7 @@ $(".close-container").on("click", function(event) {
 });
 
 $(".toggle-btn").on("click", function(e) {
-  if ($(this).hasClass("deactivate") && $(this).hasClass("guest")) {
+  if ($(this).hasClass("guest")) {
     $(this).removeClass("deactivate");
     $(this)
       .siblings()
