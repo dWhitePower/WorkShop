@@ -274,6 +274,39 @@
         <button class="btn toggle-btn member">Участник</button>
         <button class="btn toggle-btn guest deactivate">Гость</button>
       </div>
+      <form method="POST" action="mail.php" id="form-guest">
+
+        <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="Arabian WorkShop">
+      <input type="hidden" name="admin_email" value="morgun056@gmail.com">
+      <input type="hidden" name="form_subject" value="From russianarabianworkshop.com">
+      <!-- END Hidden Required Fields -->
+      
+
+        <div class="guest-inputs off">
+          <div class="form-group">
+            <input type="text" placeholder="Название компании" />
+            <label for="name">Название компании</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Должность" />
+            <label for="name">Должность</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="ФИО  " />
+            <label for="name">ФИО</label>
+          </div>
+          <div class="form-group">
+            <input type="phone" placeholder="Телефон" />
+            <label for="name">Телефон</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Вебсайт" />
+            <label for="name">Вебсайт</label>
+          </div>
+          <button type="submit" name="submit" class="btn btn-submit">Отправить заявку</button>
+        </div>
+      </form>
       <form method="POST" action="mail.php" id="form-member">
 
           <!-- Hidden Required Fields -->
@@ -317,16 +350,16 @@
         
       </form>
 
-        <form method="POST" action="mail.php" id="form-guest">
+      <!-- <form method="POST" action="mail.php" id="form-guest"> -->
 
           <!-- Hidden Required Fields -->
-        <input type="hidden" name="project_name" value="Arabian WorkShop">
+        <!-- <input type="hidden" name="project_name" value="Arabian WorkShop">
         <input type="hidden" name="admin_email" value="morgun056@gmail.com">
-        <input type="hidden" name="form_subject" value="From russianarabianworkshop.com">
+        <input type="hidden" name="form_subject" value="From russianarabianworkshop.com"> -->
         <!-- END Hidden Required Fields -->
         
 
-          <div class="guest-inputs off">
+          <!-- <div class="guest-inputs off">
             <div class="form-group">
               <input type="text" placeholder="Название компании" />
               <label for="name">Название компании</label>
@@ -349,10 +382,10 @@
             </div>
             <button type="submit" name="submit" class="btn btn-submit">Отправить заявку</button>
           </div>
-        </form>
+        </form> -->
         
       </div>
-    </div>
+    
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
