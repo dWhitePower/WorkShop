@@ -115,7 +115,7 @@ $("#form-member").submit(function() {
   var th = $(this);
   $.ajax({
     type: "POST",
-    url: "mail.php", //Change
+    url: "member.php", //Change
     data: th.serialize()
   }).done(function() {
     setTimeout(function() {
@@ -131,7 +131,7 @@ $("#form-guest").submit(function() {
   var th = $(this);
   $.ajax({
     type: "POST",
-    url: "mail.php", //Change
+    url: "guest.php", //Change
     data: th.serialize()
   }).done(function() {
     setTimeout(function() {
