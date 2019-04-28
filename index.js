@@ -110,7 +110,23 @@ $(window).on("scroll", function() {
 });
 
 //E-mail Ajax Send
-$("#form-member, #form-guest").submit(function() {
+$("#form-member").submit(function() {
+  //Change
+  var th = $(this);
+  $.ajax({
+    type: "POST",
+    url: "mail.php", //Change
+    data: th.serialize()
+  }).done(function() {
+    setTimeout(function() {
+      // Done Functions
+      th.trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
+
+$("#form-guest").submit(function() {
   //Change
   var th = $(this);
   $.ajax({
