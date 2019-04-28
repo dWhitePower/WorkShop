@@ -109,13 +109,12 @@ $(window).on("scroll", function() {
   }
 });
 
-//E-mail Ajax Send
-$("#form-member").submit(function() {
+$("#form-guest").submit(function() {
   //Change
   var th = $(this);
   $.ajax({
     type: "POST",
-    url: "member.php", //Change
+    url: "guest.php", //Change
     data: th.serialize()
   }).done(function() {
     setTimeout(function() {
@@ -126,12 +125,13 @@ $("#form-member").submit(function() {
   return false;
 });
 
-$("#form-guest").submit(function() {
+//E-mail Ajax Send
+$("#form-member").submit(function() {
   //Change
   var th = $(this);
   $.ajax({
     type: "POST",
-    url: "guest.php", //Change
+    url: "member.php", //Change
     data: th.serialize()
   }).done(function() {
     setTimeout(function() {
