@@ -756,7 +756,7 @@ if (width <= 801) {
 //   .setClassToggle(".event-gradient", "event-gradient-show")
 //   .addTo(controller);
 
-$("#radio-b").on("click", function(e) {
+$("#radio-a").on("click", function(e) {
   $(".nav-link-1").text("ABOUT EVENT");
   $(".nav-link-2").text("SCHEDULE");
   $(".nav-link-3").text("CONTACTS");
@@ -904,7 +904,7 @@ $("#radio-b").on("click", function(e) {
   $(".member-inputs .form-group input").val("");
 });
 
-$("#radio-a").on("click", function(e) {
+$("#radio-b").on("click", function(e) {
   $(".nav-link-1").text("О МЕРОПРИЯТИИ");
   $(".nav-link-2").text("РАСПИСАНИЕ");
   $(".nav-link-3").text("КОНТАКТЫ");
