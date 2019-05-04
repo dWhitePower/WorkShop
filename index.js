@@ -1,11 +1,11 @@
-$(".arrow, .nav-menu a, .nav-logo").on("click", function(e) {
+$(".arrow, .nav-menu a, .nav-logo").on("click", function (e) {
   if ("" !== this.hash) {
     e.preventDefault();
     const t = this.hash;
     $("html, body").animate({ scrollTop: $(t).offset().top }, 800);
   }
 }),
-  $(".reg, .nav-reg, .operator-btn").on("click", function(e) {
+  $(".reg, .nav-reg, .operator-btn").on("click", function (e) {
     $(".page-bg")
       .addClass("blur-layout")
       .removeClass("blur"),
@@ -15,10 +15,10 @@ $(".arrow, .nav-menu a, .nav-logo").on("click", function(e) {
       $(".reg-form").addClass("active-form"),
       $(".close-container").removeClass("close-container-away"),
       $(".check-mark").hasClass("check-mark-active") &&
-        ($(".check-mark").removeClass("check-mark-active"),
+      ($(".check-mark").removeClass("check-mark-active"),
         $(".form-blur").css("filter", "blur(0)"));
   }),
-  $(".close-container").on("click", function(e) {
+  $(".close-container").on("click", function (e) {
     $(".page-bg")
       .removeClass("blur-layout")
       .addClass("blur"),
@@ -28,7 +28,7 @@ $(".arrow, .nav-menu a, .nav-logo").on("click", function(e) {
       $(".reg-form").removeClass("active-form"),
       $(this).addClass("close-container-away");
   }),
-  $(".toggle-btn").on("click", function(e) {
+  $(".toggle-btn").on("click", function (e) {
     $(this).hasClass("guest")
       ? ($(this).removeClass("deactivate"),
         $(this)
@@ -53,10 +53,10 @@ $(".arrow, .nav-menu a, .nav-logo").on("click", function(e) {
           .removeClass("on"),
         $(".member-inputs .form-group input").val(""));
   }),
-  $(".btn-submit").on("click", function(e) {
+  $(".btn-submit").on("click", function (e) {
     $(".check-mark").addClass("check-mark-active"),
       $(".form-blur").css("filter", "blur(2px)"),
-      setTimeout(function() {
+      setTimeout(function () {
         $(".page-bg")
           .removeClass("blur-layout")
           .addClass("blur"),
@@ -67,22 +67,22 @@ $(".arrow, .nav-menu a, .nav-logo").on("click", function(e) {
           $(".close-container").addClass("close-container-away");
       }, 2e3);
   }),
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     $(window).scrollTop() > 100
       ? $(".nav").addClass("nav-background")
       : $(".nav").removeClass("nav-background");
   }),
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     $(window).scrollTop() > 700
       ? $(".header-images").addClass("header-images-away")
       : $(".header-images").removeClass("header-images-away");
   }),
-  $("#form-guest").submit(function() {
+  $("#form-guest").submit(function () {
     var e = $(this);
     return (
       $.ajax({ type: "POST", url: "guest.php", data: e.serialize() }).done(
-        function() {
-          setTimeout(function() {
+        function () {
+          setTimeout(function () {
             e.trigger("reset");
           }, 1e3);
         }
@@ -90,12 +90,12 @@ $(".arrow, .nav-menu a, .nav-logo").on("click", function(e) {
       !1
     );
   }),
-  $("#form-member").submit(function() {
+  $("#form-member").submit(function () {
     var e = $(this);
     return (
       $.ajax({ type: "POST", url: "member.php", data: e.serialize() }).done(
-        function() {
-          setTimeout(function() {
+        function () {
+          setTimeout(function () {
             e.trigger("reset");
           }, 1e3);
         }
@@ -301,7 +301,7 @@ if ((console.log(width), width <= 801)) {
       .setClassToggle(".event-gradient", "event-gradient-show")
       .addTo(e);
 }
-$("#radio-a").on("click", function(e) {
+$("#radio-a").on("click", function (e) {
   $(".nav-link-1").text("ABOUT EVENT"),
     $(".nav-link-2").text("SCHEDULE"),
     $(".nav-link-3").text("CONTACTS"),
@@ -413,7 +413,7 @@ $("#radio-a").on("click", function(e) {
     ),
     $(".member-inputs .form-group input").val("");
 }),
-  $("#radio-b").on("click", function(e) {
+  $("#radio-b").on("click", function (e) {
     $(".nav-link-1").text("О МЕРОПРИЯТИИ"),
       $(".nav-link-2").text("РАСПИСАНИЕ"),
       $(".nav-link-3").text("КОНТАКТЫ"),
@@ -425,7 +425,7 @@ $("#radio-a").on("click", function(e) {
       ),
       $(".about-title").text("О мероприятии"),
       $(".paragraph-event:first").text(
-        "Мероприятие проходит при поддержки государственных структур стран – участников и освещается федеральными и интернет СМИ"
+        "Уникальное мероприятие, на котором встречаются бизнес  - сообщество пищевой индустрии GCC и Ближнего Востока  с российскими представителями индустрии питания: топ-менеджмент гипермаркетов, сотрудники HORECA, представители пищевых комплексов, трейдеры."
       ),
       $(".paragraph-event:last").text(
         "Мероприятие проходит при поддержки государственных структур стран – участников и освещается федеральными и интернет СМИ"
