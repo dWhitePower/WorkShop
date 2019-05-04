@@ -411,7 +411,9 @@ $("#radio-a").on("click", function (e) {
     $(".member-inputs .form-group:nth-child(6) label").text(
       "Company description"
     ),
-    $(".member-inputs .form-group input").val("");
+    $(".footer .footer-smile span:first").text("Conquer new horizons..."),
+    $(".footer .footer-smile span:nth-child(2)").text("Russia!")
+  $(".member-inputs .form-group input").val("");
 }),
   $("#radio-b").on("click", function (e) {
     $(".nav-link-1").text("О МЕРОПРИЯТИИ"),
@@ -529,5 +531,7 @@ $("#radio-a").on("click", function (e) {
       $(".member-inputs .form-group:nth-child(6) label").text(
         "Описание компании"
       ),
-      $(".member-inputs .form-group input").val("");
+      $(".footer .footer-smile span:first").text("Покоряй новые горизонты..."),
+      $(".footer .footer-smile span:nth-child(2)").text("Россия!")
+    $(".member-inputs .form-group input").val("");
   });
