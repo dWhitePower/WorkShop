@@ -220,6 +220,9 @@ if ((console.log(width), width <= 801)) {
       .setClassToggle(".anim-span-3", "show-title-3")
       .addTo(e),
     new ScrollMagic.Scene({ triggerElement: ".nav" })
+      .setClassToggle(".header-btn", "btn-show")
+      .addTo(e),
+    new ScrollMagic.Scene({ triggerElement: ".nav" })
       .setClassToggle(".anim-paragraph", "show-paragraph")
       .addTo(e),
     new ScrollMagic.Scene({ triggerElement: ".about-title" })
@@ -227,6 +230,9 @@ if ((console.log(width), width <= 801)) {
       .addTo(e),
     new ScrollMagic.Scene({ triggerElement: ".about-title" })
       .setClassToggle(".paragraph-event", "show-paragraph")
+      .addTo(e),
+    new ScrollMagic.Scene({ triggerElement: ".about-title" })
+      .setClassToggle(".event-btn", "btn-show")
       .addTo(e),
     new ScrollMagic.Scene({ triggerElement: ".raw-header" })
       .setClassToggle(".raw-header", "show-raw-header")
