@@ -353,6 +353,8 @@ $("#radio-a").on("click", function (e) {
       "To Russia With Love is a Russian travel company that transports foreign tourists to Russia in the following areas: tourism, business tourism, assistance for foreign businessmen in entering the Russian market, organizing events of international importance. The company's mission:  «Development of Russia as a global tourist destination. Creating a platform to support foreign business in the Russian Federation»"
     ),
     $(".operator button").text("Feedback"),
+    $(".event-btn").text("Feedback"),
+    $(".header-btn").text("Feedback"),
     $(".form-blur h2").text("Registration to event"),
     $(".form-blur p").text("Registartion as:"),
     $(".form-blur .buttons .member").text("Participant"),
@@ -467,6 +469,8 @@ $("#radio-a").on("click", function (e) {
         "To Russia With Love – это российская туристическая компания, осуществляющая перевозку иностранных туристов в Россию по следующим направлениям: туризм, бизнес-туризм, помощь для иностранных бизнесменов в выходе на российский рынок, организация мероприятий международного значения. Миссия компании: «Развитие России как мирового туристического направления. Создание платформы для поддержки иностранного бизнеса в Российской Федерации»"
       ),
       $(".operator button").text("Напишите нам"),
+      $(".event-btn").text("Зарегистрироваться"),
+      $(".header-btn").text("Зарегистрироваться"),
       $(".form-blur h2").text("Регистрация на мероприятие"),
       $(".form-blur p").text("Зарегистрироваться как:"),
       $(".form-blur .buttons .member").text("Участник"),
